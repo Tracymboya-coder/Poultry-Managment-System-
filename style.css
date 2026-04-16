@@ -37,3 +37,222 @@ body {
   box-shadow: 0 6px 15px rgba(0,0,0,0.08);
   margin-bottom: 20px;
 }
+* WEATHER */
+.weather-box {
+  background: #dde6ec;
+  padding: 15px;
+  border-radius: 12px;
+  margin: 15px 0;
+}
+
+.weather button {
+  background: linear-gradient(90deg, #1e5eff, #1590b0);
+  border: none;
+  padding: 12px;
+  color: white;
+  border-radius: 12px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.alert {
+  margin-top: 10px;
+  font-size: 12px;
+}
+
+/* FORM */
+.form input {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 12px;
+  border: none;
+  background: #e6ebe8;
+}
+
+.form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  background: linear-gradient(90deg, #ff2d7a, #ff1744);
+  color: white;
+  border-radius: 14px;
+  margin-top: 10px;
+}
+
+/* STATS */
+.stats {
+  display: flex;
+  gap: 20px;
+}
+
+.stat {
+  flex: 1;
+  padding: 20px;
+  border-radius: 18px;
+  color: white;
+}
+
+.stat.green {
+  background: linear-gradient(90deg, #0ca678, #099268);
+}
+
+.stat.orange {
+  background: linear-gradient(90deg, #ff8c00, #ff5e00);
+}
+
+/* SEARCH */
+.search input {
+  width: 100%;
+  padding: 14px;
+  border-radius: 20px;
+  border: none;
+  background: #e9e6e1;
+}
+
+/* TABLE */
+.table-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th {
+  text-align: left;
+  font-size: 12px;
+  color: #555;
+}
+
+td {
+  padding: 10px 0;
+}
+
+.empty {
+  text-align: center;
+  color: #777;
+  margin-top: 20px;
+}
+/* ICON STYLE */
+i {
+  margin-right: 8px;
+  color: inherit;
+}
+
+/* LOGO ICON */
+.logo-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  color: white;
+}
+
+/* =========================
+   HOVER EFFECTS
+========================= */
+
+/* Cards */
+.card {
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px) scale(1.01);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* Stats hover */
+.stat {
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.stat:hover {
+  transform: translateY(-5px);
+  filter: brightness(1.05);
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  filter: brightness(1.1);
+}
+
+button:active {
+  transform: scale(0.96);
+}
+
+/* Inputs */
+input {
+  transition: all 0.25s ease;
+}
+
+input:focus {
+  outline: none;
+  transform: scale(1.02);
+  box-shadow: 0 0 0 3px rgba(0,0,0,0.05);
+}
+
+/* Table rows */
+tbody tr {
+  transition: all 0.2s ease;
+}
+
+tbody tr:hover {
+  background: #f0ede7;
+  transform: scale(1.01);
+}
+
+/* Search bar hover */
+.search input:hover {
+  background: #f1ede7;
+}
+
+/* Weather button gradient hover */
+.weather button:hover {
+  background: linear-gradient(90deg, #174ae6, #0e7c9a);
+}
+
+/* Add record button hover */
+.form button:hover {
+  background: linear-gradient(90deg, #ff3d8d, #e6003a);
+}
+
+/* Smooth fade-in */
+.card, .stat {
+  animation: fadeIn 0.5s ease;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.health-score {
+  text-align: center;
+  padding: 10px;
+}
+
+#healthScore {
+  font-size: 40px;
+  color: #2ecc71;
+  margin: 0;
+}
+.topbar h1 i {
+  margin-right: 10px;
+  color: #f39c12;
+}
