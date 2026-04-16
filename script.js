@@ -24,7 +24,7 @@ document.getElementById("fetchWeather").addEventListener("click", () => {
     });
 
 });
-onst tableBody = document.getElementById("tableBody");
+const tableBody = document.getElementById("tableBody");
 const countEl = document.getElementById("count");
 const totalChickensEl = document.getElementById("totalChickens");
 const avgEggsEl = document.getElementById("avgEggs");
@@ -207,4 +207,16 @@ document.getElementById("search").addEventListener("input", (e) => {
   );
 
   render(filtered);
+});  
+/* WEATHER */
+document.getElementById("fetchWeather").addEventListener("click", () => {
+  const temp = (18 + Math.random() * 15).toFixed(1);
+  document.getElementById("temp").textContent = temp + "°C";
+
+  if (temp > 32) {
+    alert("⚠️ Heat warning: Protect your chickens!");
+  }
 });
+
+/* INIT */
+render();
