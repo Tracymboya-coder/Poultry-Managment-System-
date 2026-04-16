@@ -1,0 +1,39 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background: #e7dfd1;
+}
+
+/* HEADER */
+.topbar {
+  background: linear-gradient(90deg, #ff4d00, #ff7a00);
+  color: white;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-box {
+  width: 60px;
+  height: 60px;
+  background: #ff7a40;
+  border-radius: 15px;
+}
+
+/* LAYOUT */
+.container {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* CARDS */
+.card {
+  background: #f2efe9;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
+  margin-bottom: 20px;
+}
