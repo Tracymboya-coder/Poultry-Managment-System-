@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: #e7dfd1;
+  background: #fa9070;
 }
 
 /* HEADER */
@@ -231,7 +231,6 @@ tbody tr:hover {
 .card, .stat {
   animation: fadeIn 0.5s ease;
 }
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -292,7 +291,7 @@ tbody tr:hover {
 .footer {
   margin-top: 30px;
   padding: 15px;
-  background: #2e7d32;
+  background:#df2975;
   color: white;
   text-align: center;
   border-radius: 10px;

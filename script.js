@@ -3,7 +3,7 @@ document.getElementById("fetchWeather").addEventListener("click", () => {
 
   const apiKey = "YOUR_API_KEY_HERE";
 
-  fetch(`https://api.openweathermap.org/data/2.5/weather?q=Nairobi&units=metric&appid=${apiKey}`)
+  fetch(`https://api.openweathermap.org/data/2.5/weather?q=Nairobi&appid=YOUR_KEY&units=metric=${apiKey}`)
     .then(res => res.json())
     .then(data => {
 
@@ -173,18 +173,18 @@ function generateAlerts() {
   if (!latest) return;
 
   if (latest.temp > 32) {
-    addAlert("⚠️ Heat stress risk: Temperature too high!");
+    addAlert("ALERT:Heat stress risk: Temperature too high!");
   }
   if (latest.temp<25) {
     addAlert( "Too cold :keep in a warmer place !!!")
   }
 
   if (latest.eggs < latest.chickens * 0.5) {
-    addAlert("⚠️ Low egg production detected!");
+    addAlert("ALERT:Low egg production detected!");
   }
 
   if (latest.feed > latest.eggs * 0.5) {
-    addAlert("⚠️ Feed inefficiency detected!");
+    addAlert("ALERT:Feed inefficiency detected!");
   }
 }
 
