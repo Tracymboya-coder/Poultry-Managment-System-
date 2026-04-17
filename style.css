@@ -318,3 +318,19 @@ tbody tr:hover {
   margin: 8px 0;
   font-size: 15px;
 }
+.alert-box {
+  background: #ffebee;          /* light red background */
+  border-left: 6px solid red;   /* strong red line */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+  margin-top: 15px;
+}
+
+.alert-box h2 {
+  color: red;
+}
+
+.alert-box p {
+  color: #b71c1c;
+}
