@@ -24,6 +24,7 @@ document.getElementById("fetchWeather").addEventListener("click", () => {
     });
 
 });
+
 const tableBody = document.getElementById("tableBody");
 const countEl = document.getElementById("count");
 const totalChickensEl = document.getElementById("totalChickens");
@@ -207,7 +208,8 @@ document.getElementById("search").addEventListener("input", (e) => {
   );
 
   render(filtered);
-});  
+});
+
 /* WEATHER */
 document.getElementById("fetchWeather").addEventListener("click", () => {
   const temp = (18 + Math.random() * 15).toFixed(1);

@@ -1,4 +1,4 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -17,6 +17,7 @@
 </head>
 
 <body>
+
 
 <header class="topbar">
   <div class="logo-box"><i class="fa-solid fa-egg"></i></div>
@@ -43,3 +44,112 @@
 
       <button id="fetchWeather">Fetch Weather</button>
     </div>
+
+    <!-- FORM -->
+    <div class="card form">
+      <h2>Add Daily Record</h2>
+
+      <input type="text" id="day" placeholder="Day (e.g. Monday)">
+      <input type="number" id="chickens" placeholder="Number of Chickens">
+      <input type="number" id="eggs" placeholder="Eggs Collected">
+      <input type="number" id="feed" placeholder="Feed (kg)">
+      <input type="number" id="temperature" placeholder="Temperature (°C)">
+
+      <button id="addRecord">Add Record</button>
+    </div>
+
+  </div>
+
+  <!-- RIGHT -->
+  <div class="right">
+
+    <!-- STATS -->
+    <div class="stats">
+      <div class="stat green">
+        <h4>Total Chickens</h4>
+        <h1 id="totalChickens">0</h1>
+      </div>
+
+      <div class="stat orange">
+        <h4>Avg Eggs</h4>
+        <h1 id="avgEggs">0</h1>
+      </div>
+    </div>
+
+    <!-- SEARCH -->
+    <div class="card search">
+      <h2>Search Records</h2>
+      <input type="text" id="search" placeholder="Search records...">
+    </div>
+<!-- FARM HEALTH STATUS -->
+<div class="card" id="healthCard">
+  <h2><i class="fa-solid fa-heart-pulse"></i> Farm Health Status</h2>
+
+  <div class="health-score">
+    <h1 id="healthScore">0/100</h1>
+    <p>Overall Farm Condition</p>
+  </div>
+
+  <div id="healthIssues"></div>
+</div>
+    <!-- ALERT AREA -->
+    <div class="card" id="alertBox">
+      <div id="healthIssues"></div>
+      <h2>Smart Alerts</h2>
+    </div>
+
+    <!-- TABLE -->
+    <div class="card table">
+      <div class="table-header">
+        <h2>Farm Records</h2>
+        <span id="count">0 records</span>
+      </div>
+
+      <table>
+        <thead>
+          <tr>
+            <th>DAY</th>
+            <th>CHICKENS</th>
+            <th>EGGS</th>
+            <th>FEED</th>
+            <th>TEMP</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+
+      <p class="empty">No records yet. Add your first record!</p>
+    </div>
+
+  </div>
+<section class="video-section">
+  <h2>Poultry Farming Guide</h2>
+  <p>Learn best practices for managing your chickens effectively.</p>
+  <div class="video-container">
+  <iframe 
+    src="https://www.youtube.com/embed/B4Ppwsr3KKw?autoplay=1&mute=1&loop=1&playlist=B4Ppwsr3KKw"
+    title="Poultry Farming Video"
+    allow="autoplay"
+    allowfullscreen>
+  </iframe>
+
+</div>
+</section>
+<section class="guide-section">
+  <h2>📘 Poultry . Farming . Guide</h2>
+  <ul>
+    <li> Provide clean water daily!</li>
+    <li>Feed chickens balanced diet!</li>
+    <li>Keep the coop clean and dry!</li>
+    <li>Vaccinate regularly!</li>
+  </ul>
+</section>
+</div>
+
+<footer class="footer">
+  <p>🐔 Poultry Management System</p>
+  <p>Contact: +254 712 345 678 | support@poultryfarm.com</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

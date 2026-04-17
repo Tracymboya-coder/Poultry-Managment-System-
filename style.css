@@ -256,3 +256,65 @@ tbody tr:hover {
   margin-right: 10px;
   color: #f39c12;
 }
+.video-section {
+  background: #f5fff5;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.video-section h2 {
+  color: #2e7d32;
+  margin-bottom: 10px;
+}
+
+.video-section p {
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  padding-bottom: 40%; /* smaller = thinner */
+  margin: auto;
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+.footer {
+  margin-top: 30px;
+  padding: 15px;
+  background: #2e7d32;
+  color: white;
+  text-align: center;
+  border-radius: 10px;
+}
+.guide-section {
+  background: #fff8e1;
+  padding: 15px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.guide-section h2 {
+  color: #ff9800;
+  margin-bottom: 10px;
+}
+
+.guide-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.guide-section li {
+  margin: 8px 0;
+  font-size: 15px;
+}
