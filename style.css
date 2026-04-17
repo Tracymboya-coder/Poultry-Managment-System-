@@ -28,15 +28,25 @@ body {
   gap: 20px;
   padding: 20px;
 }
-
-/* CARDS */
+/* Cards */
 .card {
-  background: #f2efe9;
-  padding: 20px;
-  border-radius: 18px;
-  box-shadow: 0 6px 15px rgba(0,0,0,0.08);
-  margin-bottom: 20px;
+  background: #ffebee;          /* light red background */
+  border-left: 6px solid orangered;   /* strong red line */
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
+  margin-top: 15px;
 }
+
+.card {
+  color: red;
+}
+
+.card{
+  color: #b71c1c;
+}
+
+
 * WEATHER */
 .weather-box {
   background: #dde6ec;
@@ -316,20 +326,4 @@ tbody tr:hover {
 .guide-section li {
   margin: 8px 0;
   font-size: 15px;
-}
-.card {
-  background: #ffebee;          /* light red background */
-  border-left: 6px solid orangered;   /* strong red line */
-  padding: 15px;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.2);
-  margin-top: 15px;
-}
-
-.card {
-  color: red;
-}
-
-.card{
-  color: #b71c1c;
-}
+} 
