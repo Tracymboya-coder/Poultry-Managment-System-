@@ -3,6 +3,9 @@
 A smart, mobile-friendly web application designed to help farmers **track, analyze, and improve poultry farm performance**.
 
 ---
+# Demo
+Here is the live-link:  https://tracymboya-coder.github.io/Poultry-Managment-System-/
+
 
 ## 🚀 Features
 
